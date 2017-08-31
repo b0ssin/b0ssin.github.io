@@ -1,7 +1,11 @@
+/* ==BASIC RESET==*/
+
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #fff;
+	background-color: #ecf0f1;
+	font-family: 'Raleway', sans-serif;
+	height: 100%;
 }
 
 html { 
@@ -10,24 +14,49 @@ html {
   padding: 0;
 }
 
+html, body {
+	margin: 0;
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+
+* {
+	box-sizing: border-box;
+}
+
+/* ==HEADER== */
+
 h1 {
-	font-size: 1.5em;
+	font-size: 1.76em;
 	color: white;
 	width: 50%;
 	margin: -20px auto 20px auto;
 	padding-top: 5%;
 	line-height: 1.5;
-
-
+	letter-spacing: 0.03em
 }
 
 h2 {
-	font-size: 1.25em;
+	font-size: 1.5em;
 	color: white;
 	width: 50%;
 	margin: 0 auto;
 	line-height: 1.5;
 }
+
+#header {
+	background-color: steelblue;
+    height: auto;
+    padding-bottom: 5%;
+    margin-bottom: 20px;
+    margin-top -40px;    
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+
+/* ==PROJECT GALLERY== */
 
 img {
 	border: 1px solid #ddd;
@@ -35,44 +64,32 @@ img {
   padding: 5px;
 }
 
-.hr-head {
-	width: 25%;
-	margin: 0 auto;
-}
-
-* {
-	box-sizing: border-box;
-}
-
-#header {
-	background-color: steelblue;
-/*	min-height: 300px;*/
-    height: auto;
-    padding-bottom: 5%;
-    margin-bottom: 20px;
-    margin-top -40px;    
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-
-}
-
 #gallery {
-	width: 90%;
-	margin: 0 auto;
+	width: 80%;
+	height: auto;
+	margin: 0 auto -60px auto;
+	margin-bottom: -60px;
+	padding: 20px;
 }
+
 
 .hvrbox,
 .hvrbox * {
 	box-sizing: border-box;
 }
+
 .hvrbox {
 	position: relative;
 	display: inline-block;
 	overflow: hidden;
-	max-width: 30%;
+	max-width: 33%;
 	height: auto;
+	padding-left: 1.66%;
+	padding-right: 1.66%;
 }
 .hvrbox img {
 	width: 100%;
+	min-height: 240px;
 	height: auto;
 }
 .hvrbox .hvrbox-layer_bottom {
@@ -100,6 +117,7 @@ img {
 .hvrbox.active .hvrbox-layer_top {
 	opacity: 1;
 }
+
 .hvrbox .hvrbox-text {
 	text-align: center;
 	font-size: 18px;
@@ -112,6 +130,7 @@ img {
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
+
 .hvrbox .hvrbox-text_mobile {
 	font-size: 15px;
 	border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
@@ -120,6 +139,23 @@ img {
 	padding-top: 2px;
 	display: none;
 }
+
 .hvrbox.active .hvrbox-text_mobile {
 	display: block;
+}
+
+
+/* ==FOOTER== */
+footer {
+	background-color: steelblue;
+	display: table-row;
+	height: 1px;
+	text-align: center;
+	padding: 5px 0 5px 0;
+}
+
+/* ==GENERAL STYLING== */
+
+.fa {
+	padding: 5px;
 }
